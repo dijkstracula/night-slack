@@ -1,6 +1,8 @@
 # Night Slack
 A multiplayer port of the "classic" interactive movie [Night Trap](https://en.wikipedia.org/wiki/Night_Trap) to internet chatroom protocols
 
+[![Build Status](https://travis-ci.org/dijkstracula/night-slack.svg?branch=master)](https://travis-ci.org/dijkstracula/night-slack)
+
 ## FAQ
 
 ### Why?
