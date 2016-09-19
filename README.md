@@ -1,10 +1,10 @@
-= Night Slack
+# Night Slack
 A multiplayer port of the "classic" interactive movie [Night Trap](https://en.wikipedia.org/wiki/Night_Trap) to internet chatroom protocols
 
-== FAQ
+## FAQ
 
-=== Why?
+### Why?
 Sometimes idea spitballing at [Strange Loop](https://thestrangeloop.com) takes unexpected turns.
 
-=== Is it fun?
+### Is it fun?
 No, but the original game wasn't either.
