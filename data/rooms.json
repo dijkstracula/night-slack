@@ -1,0 +1,20 @@
+[
+    {
+        "name": "LivingRoom",
+        "desc": "TODO",
+        "exits": { "north": "FirstFloorHallway" }
+    },
+    {
+        "name": "Kitchen",
+        "desc": "TODO",
+        "exits": { "east": "FirstFloorHallway" }
+    },
+    {
+        "name": "FirstFloorHallway",
+        "desc": "TODO",
+        "exits": { 
+            "south": "FirstFloorHallway",
+            "west": "Kitchen" 
+        }
+    }
+]
