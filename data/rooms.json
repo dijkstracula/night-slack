@@ -1,7 +1,7 @@
 [
     {
-        "name": "LivingRoom",
-        "desc": "TODO",
+        "name": "Living Room",
+        "desc": "Bookshelves holding family albums and encyclopedias line the far wall of the living room, while heavy curtains line the wall opposite an ornamental fireplace. Tastefully matching sofas lie in the centre of the room, surrounding a large colour TV set.",
         "exits": { "north": "FirstFloorHallway" }
     },
     {
@@ -10,7 +10,7 @@
         "exits": { "east": "FirstFloorHallway" }
     },
     {
-        "name": "FirstFloorHallway",
+        "name": "First Floor Hallway",
         "desc": "TODO",
         "exits": { 
             "south": "FirstFloorHallway",
