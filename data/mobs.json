@@ -1,0 +1,14 @@
+[
+    {
+        "class": "Dastardly Auger",
+        "avatar": 128122, 
+        "max_hp": 1,
+        "desc": "Draped in black and with a shuffling gait, this auger is on the prowl for human blood!"
+    },
+    {
+        "class": "Devious Auger",
+        "avatar": 128122, 
+        "max_hp": 2,
+        "desc": "This auger stands taller than the others, and wields a telescopic neck clamp to ensnare his victims!"
+    }
+]

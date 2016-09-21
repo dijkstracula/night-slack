@@ -42,5 +42,16 @@ func main() {
 	} else {
 		glog.Infof("%d room(s) loaded.", len(rooms))
 	}
-	fmt.Printf("%s", rooms["LivingRoom"].Show())
+
+	mobs, err := mob.Load(path.Join(dataDirPath, "mobs.json"))
+	if err != nil {
+		glog.Fatalf("Could not load mob data: %v", err)
+	} else {
+		glog.Infof("%d mob(s) loaded.", len(mobs))
+	}
+
+
+	// TODO
+	fmt.Printf("%v\n", rooms["Living Room"].Show())
+	fmt.Printf("%v\n", mobs["Dastardly Auger"].Instance().Show())
 }
