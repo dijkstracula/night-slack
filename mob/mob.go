@@ -28,8 +28,9 @@ type MobClass struct {
 }
 
 //Instance returns a new mob of the given type.
-func (mc *MobClass) Instance() *Mob {
+func (mc *MobClass) Instance(name string) *Mob {
 	return &Mob{
+		Name:  name,
 		Class: mc,
 		CurHP: mc.MaxHP,
 	}
@@ -39,6 +40,9 @@ func (mc *MobClass) Instance() *Mob {
 
 // Mob is an instance of a MobClass.
 type Mob struct {
+	// The name of the individual mob.
+	Name string
+
 	// Class is the mob's class.
 	Class *MobClass
 

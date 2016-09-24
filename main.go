@@ -50,8 +50,7 @@ func main() {
 		glog.Infof("%d mob(s) loaded.", len(mobs))
 	}
 
-
 	// TODO
 	fmt.Printf("%v\n", rooms["Living Room"].Show())
-	fmt.Printf("%v\n", mobs["Dastardly Auger"].Instance().Show())
+	fmt.Printf("%v\n", mobs["Dastardly Auger"].Instance("larry").Show())
 }
