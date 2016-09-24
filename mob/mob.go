@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"io"
 	"os"
-
-	"github.com/dijkstracula/night-slack/room"
 )
 
 /////////////////////////////////////////////////////////////////////// MobClass
@@ -19,7 +17,7 @@ type MobClass struct {
 	// The class name of the mobile.
 	Name string `json:"class"`
 
-	// A utf32 character code point for an emoji visual display of the mob, 
+	// A utf32 character code point for an emoji visual display of the mob,
 	Avatar int32 `json:"avatar"`
 
 	// Flavour text for the mobile.
@@ -31,9 +29,8 @@ type MobClass struct {
 
 //Instance returns a new mob of the given type.
 func (mc *MobClass) Instance() *Mob {
-	return &Mob {
+	return &Mob{
 		Class: mc,
-		Room: nil,
 		CurHP: mc.MaxHP,
 	}
 }
@@ -44,9 +41,6 @@ func (mc *MobClass) Instance() *Mob {
 type Mob struct {
 	// Class is the mob's class.
 	Class *MobClass
-
-	// Room is the room the mob is currently in.
-	Room *room.Room
 
 	// CurrHP is how many hit points the Mob currently has.
 	CurHP int
@@ -106,7 +100,7 @@ func Load(path string) (map[string]*MobClass, error) {
 
 	// ...and construct the mapping of room name to room structures.
 	mobClassMap := make(map[string]*MobClass)
-	for _, c := range(mobClasses) {
+	for _, c := range mobClasses {
 		mobClassMap[c.Name] = c
 	}
 	return mobClassMap, nil
